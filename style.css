@@ -1,0 +1,20 @@
+body {
+  margin:0; font-family:system-ui; overflow:hidden; background:#110000; display:flex; justify-content:center; align-items:center; height:100vh;
+}
+
+.player-card {
+  width:360px; max-width:95%; border-radius:20px; padding:16px;
+  background: linear-gradient(180deg,#2b0000 0%,#160000 60%,#000 100%);
+  box-shadow:0 20px 50px rgba(0,0,0,0.8);
+  color:#fff;
+}
+
+#progress,#volume{accent-color:#d81f26; height:4px;}
+button,a.btn{border-radius:50px !important; transition:all .2s;}
+button:hover,a.btn:hover{background:rgba(216,31,38,.2); border-color:#d81f26;color:#ff4d4d;}
+#play{font-size:1.4rem; padding:6px 14px;}
+#playlist{margin-top:10px; max-height:180px; overflow-y:auto;}
+#playlist .list-group-item{background:transparent;color:#eee;border:none;padding:8px 4px; cursor:pointer; transition:all .2s;}
+#playlist .list-group-item:hover,#playlist .list-group-item.active{background:rgba(255,60,60,.15); color:#ff4d4d;}
+
+@media(max-width:576px){.player-card{width:100%; height:100vh; border-radius:0;}}
