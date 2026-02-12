@@ -24,6 +24,7 @@ fetch("playlist.json")
     playlist.forEach((song, i) => {
       const li = document.createElement("li");
       li.textContent = song.title;
+      li.classList.add("list-group-item");
       li.onclick = () => loadSong(i, true);
       playlistUI.appendChild(li);
     });
